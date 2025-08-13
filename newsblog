@@ -2,8 +2,8 @@ name: Update News Every 2 Minutes
 
 on:
   schedule:
-    - cron: "*/2 * * * *"  # Runs every 2 minutes
-  workflow_dispatch:       # Allows manual trigger
+    - cron: "*/2 * * * *"
+  workflow_dispatch:
 
 jobs:
   update-news:
