@@ -19,6 +19,7 @@ categories = {
 
 
 
+
 # ===== FUNCTIONS =====
 def fetch_and_save():
     os.makedirs("news_blog", exist_ok=True)
