@@ -13,8 +13,10 @@ categories = {
     "prime_minister": "https://news.google.com/rss/search?q=prime+minister&hl=en-IN&gl=IN&ceid=IN:en",
     "accident": "https://news.google.com/rss/search?q=accident&hl=en-IN&gl=IN&ceid=IN:en",
     "sports": "https://news.google.com/rss/search?q=sports&hl=en-IN&gl=IN&ceid=IN:en",
-    "events": "https://news.google.com/rss/search?q=events&hl=en-IN&gl=IN&ceid=IN:en"
+    "events": "https://news.google.com/rss/search?q=events&hl=en-IN&gl=IN&ceid=IN:en",
+    "toi_article": "YOUR_CUSTOM_RSS_FEED_URL"
 }
+
 
 # ===== FUNCTIONS =====
 def fetch_and_save():
