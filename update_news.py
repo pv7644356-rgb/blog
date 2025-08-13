@@ -23,8 +23,16 @@ def fetch_and_save():
 
     for name, url in categories.items():
         feed = feedparser.parse(url)
-        html_content = f"<html><head><meta charset='UTF-8'><title>{name.capitalize()} News</title></head><body>"
-        html_content += f"<h1>{name.capitalize()} News - Updated {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</h1>"
+        html_content = f"""
+        <html>
+        <head>
+            <meta charset='UTF-8'>
+            <meta http-equiv='refresh' content='120'>  <!-- Auto-refresh every 2 minutes -->
+            <title>{name.capitalize()} News</title>
+        </head>
+        <body>
+            <h1>{name.capitalize()} News - Updated {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</h1>
+        """
         
         for entry in feed.entries[:10]:
             html_content += f"<p><a href='{entry.link}' target='_blank'>{entry.title}</a></p>"
